@@ -3,8 +3,6 @@ import os
 
 from livereload import Server
 
-server = Server()
-
 
 def on_reload():
     return
@@ -12,11 +10,13 @@ def on_reload():
 
 def main():
     on_reload()
+    server = Server()
+    server.watch('index.html', on_reload)
+    server.serve(root='.', default_filename='index.html')
 
 
 if __name__ == '__main__':
     main()
 
 
-server.watch('index.html', on_reload)
-server.serve(root='.', default_filename='index.html')
+
