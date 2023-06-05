@@ -12,10 +12,20 @@
          border-style: double;
          background-color: rgba(117, 190, 218, 0.0)
        }
+       .shadow {
+          background: #000;
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          padding: 10px;
+          offX: 10px;
+          offY: 10px;
+          width: 800px;
+          height: 600px;
+        }
       </style>
   </head>
   <body>
     <link rel="stylesheet" href="static/font-awesome.min.css">
+    <div class="shadow">
     <div id="player" style="width: 800px; height: 600px;">
         <div class="js-video-container" style="width: 100%; height: 100%"></div>
         <div style="background-color: black;">
@@ -35,6 +45,7 @@
             <i class="fa fa-fullscreen fa-1x" aria-hidden="false"></i>
           </button>
         </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
