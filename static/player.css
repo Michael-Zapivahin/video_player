@@ -1,0 +1,30 @@
+     .vp-button {
+        height: 25px;
+        width: 25px;
+        color: white;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        background-color: black;
+        width: 25px;
+        height: 25px;
+    }
+    .vp-buttons-container {
+        display: flex;
+        align-items: stretch;
+        background-color: black;
+    }
+   .vp-screen {
+      display: flex;
+      flex-direction: column;
+      background: #000000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      width: 800px;
+      height: 600px;
+    }
+    .vp-video-container {
+        flex-grow: 2;
+    }
+    .vp-separator {
+        flex-grow: 4;
+    }

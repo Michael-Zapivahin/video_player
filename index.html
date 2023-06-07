@@ -3,41 +3,12 @@
   <head>
     <title>Video-player</title>
     <link rel="stylesheet" href="static/font-awesome.min.css">
+    <link rel="stylesheet" href="static/player.css">
     <meta charset="utf-8">
-    <style>
-     .vp-button {
-        height: 25;
-        width: 25;
-        color: white;
-        font-size: 20px;
-        border:none;
-        cursor: pointer;
-        background-color: black;
-    }
-    .vp-buttons-container {
-        display: flex;
-        align-items: straight;
-        background-color: black;
-    }
-   .vp-screen {
-      display: flex;
-      flex-direction: column;
-      background: #000000;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      width: 100%;
-      height: 600px;
-    }
-    .vp-video-container {
-        flex-grow: 2;
-    }
-    .vp-separator {
-        flex-grow: 4;
-    }
-   </style>
   </head>
   <body>
     <div id="player" class="vp-screen">
-      <div class="js-video-container vp-video-container"></div>
+    <div class="js-video-container vp-video-container"></div>
       <div class="vp-buttons-container">
         <button class="js-play-button vp-button">
           <i class="fa fa-play fa-1x" aria-hidden="false"></i>
