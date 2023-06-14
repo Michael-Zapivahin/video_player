@@ -7,59 +7,64 @@
   <meta charset="utf-8">
 </head>
 <body>
-<div id="player" class="vp-screen">
-  <div class="js-video-container vp-video-container"></div>
-  <div class="vp-buttons-container" style="
-            height: 25px;
-            margin-bottom: 11px;
-            margin-left: 5px;
-        ">
-    <button class="js-play-button vp-button">
-      <i class="fa fa-play fa-1x" aria-hidden="false"></i>
-    </button>
-    <button class="js-pause-button vp-button">
-      <i class="fa fa-pause fa-1x" aria-hidden="false"></i>
-    </button>
-    <button class="js-mute-button vp-button">
-      <i class="fa fa-volume-up" aria-hidden="true" style="margin-left: 11px;"></i>
-    </button>
-    <button class="js-volume-button vp-button" style="
-    padding-right:0;
-    padding-left: 0px;
-    height: 27px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-bottom: 1px;
-    margin-right: 5px;
-">
-      <i class="fa fa-volume-off" aria-hidden="true"></i>
-    </button>
-    <div class="vp-separator"></div>
-    <button class="js-fullscreen-button vp-button" style="
-    padding-right:0;
-    padding-left: 0px;
-    height: 27px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-bottom: 1px;
-    margin-right: 5px;
-">
-          <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-        </button>
+  <div id="player" class="vp-screen">
+    <div class="js-video-container vp-video-container"></div>
+    <div style="color: white;">
+      <span class="js-current-time"></span>
+      —
+      <span class="js-duration"></span>
+    </div>
+    <div class="vp-buttons-container" style="
+              height: 25px;
+              margin-bottom: 11px;
+              margin-left: 5px;
+          ">
+      <button class="js-play-button vp-button">
+        <i class="fa fa-play fa-1x" aria-hidden="false"></i>
+      </button>
+      <button class="js-pause-button vp-button">
+        <i class="fa fa-pause fa-1x" aria-hidden="false"></i>
+      </button>
+      <button class="js-mute-button vp-button">
+        <i class="fa fa-volume-up" aria-hidden="true" style="margin-left: 11px;"></i>
+      </button>
+      <button class="js-volume-button vp-button" style="
+      padding-right:0;
+      padding-left: 0px;
+      height: 27px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-bottom: 1px;
+      margin-right: 5px;
+  ">
+        <i class="fa fa-volume-off" aria-hidden="true"></i>
+      </button>
+      <div class="vp-separator"></div>
+      <button class="js-fullscreen-button vp-button" style="
+      padding-right:0;
+      padding-left: 0px;
+      height: 27px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-bottom: 1px;
+      margin-right: 5px;
+  ">
+            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+          </button>
+    </div>
   </div>
-</div>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
-<script src="static/player.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+  <script src="static/player.js"></script>
 
-<script type="text/javascript">
-            createPlayer({
-              elementId: 'player',
-              src: 'https://dvmn.org/media/filer_public/d0/16/d016d9b8-4180-4bb9-ad83-0241f61627b8/samsung_demo_-_alive_in_color.mp4',
-            });
+  <script type="text/javascript">
+              createPlayer({
+                elementId: 'player',
+                src: 'https://dvmn.org/media/filer_public/d0/16/d016d9b8-4180-4bb9-ad83-0241f61627b8/samsung_demo_-_alive_in_color.mp4',
+              });
 
-</script>
+  </script>
 </body>
 </html>
