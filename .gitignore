@@ -157,3 +157,5 @@ cython_debug/
 .idea/misc.xml
 .idea/vcs.xml
 .idea/workspace.xml
+highest.png
+test.html
