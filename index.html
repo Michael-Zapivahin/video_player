@@ -4,20 +4,19 @@
   <title>Video-player</title>
   <link rel="stylesheet" href="static/font-awesome.min.css">
   <link rel="stylesheet" href="static/player.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta charset="utf-8">
 </head>
 <body>
   <div id="player" class="vp-screen">
     <div class="js-video-container vp-video-container"></div>
-    <div style="color: white;">
-      <span class="js-current-time"></span>
-      —
-      <span class="js-duration"></span>
-    </div>
     <div class="vp-buttons-container" style="
               height: 25px;
               margin-bottom: 11px;
               margin-left: 5px;
+              font-family: 'Roboto', Regular 400;
           ">
       <button class="js-play-button vp-button">
         <i class="fa fa-play fa-1x" aria-hidden="false"></i>
@@ -28,29 +27,34 @@
       <button class="js-mute-button vp-button">
         <i class="fa fa-volume-up" aria-hidden="true" style="margin-left: 11px;"></i>
       </button>
+      <span class="js-current-time" style="
+          height: 25px;
+          color: white;
+          margin-left: 20px;
+          margin-top: 4px;
+      ">0:00:00</span>
+      <div class="vp-separator"></div>
+      <span class="js-duration" style="
+          height: 25px;
+          color: white;
+          margin-top: 4px;
+          margin-right: 7px;
+      ">0:01:35</span>
       <button class="js-volume-button vp-button" style="
-      padding-right:0;
-      padding-left: 0px;
-      height: 27px;
-      padding-bottom: 0px;
-      padding-top: 0px;
-      margin-bottom: 1px;
-      margin-right: 5px;
-  ">
+        height: 27px;
+        margin-bottom: 1px;
+        margin-right: 5px;
+      ">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
-      <div class="vp-separator"></div>
+<!--      <div class="vp-separator"></div>-->
       <button class="js-fullscreen-button vp-button" style="
-      padding-right:0;
-      padding-left: 0px;
-      height: 27px;
-      padding-bottom: 0px;
-      padding-top: 0px;
-      margin-bottom: 1px;
-      margin-right: 5px;
-  ">
-            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-          </button>
+        height: 27px;
+        margin-bottom: 1px;
+        margin-right: 7px;
+      ">
+        <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
 
