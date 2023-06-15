@@ -1,3 +1,6 @@
+     :focus {
+        outline: 0;
+    }
      .vp-button {
         height: 25px;
         width: 25px;
