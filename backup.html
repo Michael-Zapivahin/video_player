@@ -12,43 +12,26 @@
 .dot {
   height: 10px;
   width: 10px;
-  background-color: black;
+  background-color: red;
   border-radius: 50%;
   display: inline-block;
   border-style: solid;
   border-width: 3px;
   border-left-width: 2px;
   border-right-width: 2px;
-  border-color: black;
+  border-color: white;
   margin-bottom: -4px;
   margin-left: -4px;
   margin-top: auto;
 
 }
-.vp-slider-container {
+.slider-container {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   background-color: black;
   margin-top: 5px;
 }
-.vp-slider-container:hover .vp-progress-slider {
-  background-color: red;
-}
-.vp-slider-container:hover .dot {
-  background-color: red;
-  border-color: white;
-}
-.vp-progress-slider {
-          background-color: black;
-          width: 100%;
-          height: 5px;
-          border-radius: 10%;
-          border-style: solid;
-          margin-top: 4px;
-}
-
-
 </style>
 </head>
 <body>
@@ -69,7 +52,6 @@
       <button class="js-mute-button vp-button">
         <i class="fa fa-volume-up" aria-hidden="true" style="margin-left: 11px;"></i>
       </button>
-
       <span class="js-current-time" style="
           height: 25px;
           color: white;
@@ -77,8 +59,16 @@
           margin-top: 4px;
       ">0:00:00</span>
       <div class="js-progress" style="background-color: black;width: 600px;margin-left: 5px;">
-        <div class="slider-container vp-slider-container">
-          <div class="js-progress-slider vp-progress-slider">progres</div>
+        <div class="slider-container">
+          <div class="js-progress-slider" style="
+          background-color: red;
+          width: 100%;
+          height: 5px;
+          border-radius: 10%;
+          border-style: solid;
+          margin-top: 4px;
+          ">progress
+          </div>
           <span class="dot";></span>
         </div>
       </div>
