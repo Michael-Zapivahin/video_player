@@ -15,7 +15,8 @@
         align-items: stretch;
         background-color: black;
         padding-left: 0px;
-        padding-bottom: 5px
+        padding-bottom: 5px;
+        font-family: 'Roboto', 400;
     }
    .vp-screen {
       display: flex;
