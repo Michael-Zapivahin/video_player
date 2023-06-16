@@ -8,7 +8,7 @@
         font-size: 20px;
         border: none;
         cursor: pointer;
-        background-color: black;
+        background-color: transparent;
     }
     .vp-buttons-container {
         display: flex;
