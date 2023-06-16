@@ -9,13 +9,13 @@
         border: none;
         cursor: pointer;
         background-color: black;
-        width: 25px;
-        height: 25px;
     }
     .vp-buttons-container {
         display: flex;
         align-items: stretch;
         background-color: black;
+        padding-left: 0px;
+        padding-bottom: 5px
     }
    .vp-screen {
       display: flex;

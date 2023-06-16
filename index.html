@@ -61,7 +61,6 @@
             color: white;
             margin-left: 20px;
             font-size: large;
-            margin-top: 5px;
             flex-direction: row;
 }
 
@@ -70,21 +69,21 @@
 <body>
   <div id="player" class="vp-screen">
     <div class="js-video-container vp-video-container"></div>
-      <div class="vp-buttons-container" style="
-                height: 25px;
-                margin-bottom: 11px;
-                margin-left: 5px;
-                font-family: 'Roboto', Regular 400;">
-        <button class="js-play-button vp-button">
+      <div class="vp-buttons-container">
+        <button class="js-play-button vp-button" style="padding-left: 10px;">
           <i class="fa fa-play fa-1x" aria-hidden="false"></i>
         </button>
         <button class="js-pause-button vp-button">
           <i class="fa fa-pause fa-1x" aria-hidden="false"></i>
         </button>
-        <button class="js-mute-button vp-button">
-          <i class="fa fa-volume-up" aria-hidden="true" style="margin-left: 11px;"></i>
+        <button class="js-mute-button vp-button" style="padding-left: 10px">
+          <i class="fa fa-volume-up" aria-hidden="true" style="margin-left: 10px;"></i>
         </button>
-        <div class="vp-progress-container">
+        <div class="vp-progress-container" style="
+          margin-left: 20px;
+          padding-bottom: 0px;
+          padding-left: 4px;
+          padding-top: 1px;">
           <span class="js-current-time">0:00:00</span>
           <div class="js-progress" style="background-color: black;width: 575px;margin-left: 5px;">
             <div class="slider-container vp-slider-container">
